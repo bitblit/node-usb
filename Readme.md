@@ -5,6 +5,10 @@ Started as a straight fork of https://github.com/tessel/node-usb) so that I coul
 my schedule.  Added typescript types from DefinitelyTyped (Eric Brody <https://github.com/underscorebrody>),
 (Rob Moran <https://github.com/thegecko>) (Definitions: https://github.com/borisyankov/DefinitelyTyped)
 
+Version Mapping
+===============
+This v2.0.0 matches tessel's 1.6.3 (2020-07-03)
+
 
 Historical
 ==========
