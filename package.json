@@ -1,7 +1,7 @@
 {
   "name": "@bitblit/usb",
   "description": "Library to access USB devices (Derived from https://github.com/tessel/node-usb.git)",
-  "version": "1.6.3.100",
+  "version": "1.6.3+100",
   "engines": {
     "node": ">=6"
   },
