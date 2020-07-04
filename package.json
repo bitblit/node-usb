@@ -1,6 +1,6 @@
 {
-  "name": "usb",
-  "description": "Library to access USB devices",
+  "name": "@bitblit/usb",
+  "description": "Library to access USB devices (Derived from https://github.com/tessel/node-usb.git)",
   "version": "1.6.3",
   "engines": {
     "node": ">=6"
@@ -10,6 +10,11 @@
     "hardware"
   ],
   "contributors": [
+    {
+      "name": "Chris Weiss",
+      "email": "bitblit@gmail.com",
+      "url": "http://www.erigir.com"
+    },
     {
       "name": "Kevin Mehall",
       "email": "km@kevinmehall.net",
@@ -21,33 +26,33 @@
       "url": "http://timryan.org"
     },
     {
-      "name": "Christopher Klein"
+      "name": "Christopher Weiss"
     }
   ],
   "main": "./usb",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tessel/node-usb.git"
+    "url": "https://github.com/bitblit/node-usb.git"
   },
   "scripts": {
     "install": "prebuild-install --verbose || node-gyp rebuild",
-    "prebuild": "prebuild --force --strip --verbose",
+    "prebuild": "prebuild --force --strip --verbose -r electron -t 9.0.5",
     "test": "mocha --require coffeescript/register --grep Module test/*",
     "full-test": "mocha --require coffeescript/register test/*",
     "valgrind": "coffee -c test/usb.coffee; valgrind --leak-check=full --show-possibly-lost=no node --expose-gc --trace-gc node_modules/mocha/bin/_mocha -R spec"
   },
   "dependencies": {
-    "bindings": "^1.4.0",
+    "bindings": "1.4.0",
     "nan": "2.13.2",
-    "prebuild-install": "^5.3.3"
+    "prebuild-install": "5.3.3"
   },
   "resolutions": {
     "**/nan": "2.13.2"
   },
   "devDependencies": {
-    "coffeescript": "~2.4.1",
-    "mocha": "~6.1.4",
-    "prebuild": "^9.1.1"
+    "coffeescript": "2.4.1",
+    "mocha": "6.1.4",
+    "prebuild": "9.1.1"
   },
   "license": "MIT"
 }
