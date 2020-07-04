@@ -522,3 +522,4 @@ exports.on('removeListener', function(name) {
 		usb._disableHotplugEvents();
 	}
 });
+

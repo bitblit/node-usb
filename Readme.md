@@ -1,7 +1,13 @@
 USB Library for Node.JS
 ===============================
 
-[![Build Status](https://travis-ci.org/tessel/node-usb.svg?branch=master)](https://travis-ci.org/tessel/node-usb)
+Started as a straight fork of https://github.com/tessel/node-usb) so that I could get prebuilds for electron on 
+my schedule.  Added typescript types from DefinitelyTyped (Eric Brody <https://github.com/underscorebrody>),
+(Rob Moran <https://github.com/thegecko>) (Definitions: https://github.com/borisyankov/DefinitelyTyped)
+
+
+Historical
+==========
 
 Node.JS library for communicating with USB devices in JavaScript / CoffeeScript.
 
