@@ -34,9 +34,13 @@
     "type": "git",
     "url": "https://github.com/bitblit/node-usb.git"
   },
+  "CAW_NOTES": {
+    "noteA": "prebuild below was prebuild --force --strip --verbose -r electron -t 9.0.5",
+    "noteB": "ABI 82 is aiming for electron V11"
+  },
   "scripts": {
     "install": "prebuild-install --verbose || node-gyp rebuild",
-    "prebuild": "prebuild --force --strip --verbose -r electron -t 9.0.5",
+    "prebuild": "prebuild --force --strip --verbose -r electron --t 82",
     "test": "mocha --require coffeescript/register --grep Module test/*",
     "full-test": "mocha --require coffeescript/register test/*",
     "valgrind": "coffee -c test/usb.coffee; valgrind --leak-check=full --show-possibly-lost=no node --expose-gc --trace-gc node_modules/mocha/bin/_mocha -R spec"

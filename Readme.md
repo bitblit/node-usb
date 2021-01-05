@@ -5,6 +5,14 @@ Started as a straight fork of https://github.com/tessel/node-usb) so that I coul
 my schedule.  Added typescript types from DefinitelyTyped (Eric Brody <https://github.com/underscorebrody>),
 (Rob Moran <https://github.com/thegecko>) (Definitions: https://github.com/borisyankov/DefinitelyTyped)
 
+Cloning this repo
+======================
+This includes libusb as a submodule.  Make sure you clone this like so:
+
+```
+git clone --recurse-submodules  git@github.com:bitblit/node-usb.git
+```
+
 Building and Uploading a Prebuild
 =================================
 The command you are looking for is :
